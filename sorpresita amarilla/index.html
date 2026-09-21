@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#171105">
+  <meta name="description" content="Flores amarillas digitales para este 21 de septiembre.">
+  <meta property="og:title" content="Flores amarillas para ti">
+  <meta property="og:description" content="Un detalle que florece este 21 de septiembre.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-whatsapp.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ramo de flores amarillas iluminado bajo el texto 21 de septiembre">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="DATOS/img/flowers.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <title>Flores amarillas para ti • 21 de septiembre</title>
+</head>
+<body>
+  <a class="skip-link" href="#historia">Ir al contenido</a>
+
+  <div class="page-loader" aria-hidden="true">
+    <div class="loader-flower">
+      <i></i><i></i><i></i><i></i><span></span>
+    </div>
+    <p>Plantando un pequeño detalle…</p>
+  </div>
+
+  <div class="ambient" aria-hidden="true">
+    <div class="aurora aurora--one"></div>
+    <div class="aurora aurora--two"></div>
+    <div class="grain"></div>
+    <div class="stars" id="stars"></div>
+  </div>
+
+  <audio id="soundtrack" src="DATOS/img/Floricienta.mp3" preload="none" loop></audio>
+
+  <header class="site-header" aria-label="Navegación principal">
+    <a class="brand" href="#inicio" aria-label="Volver al inicio">
+      <svg viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M20 22c-8-1-12-6-9-11 4-4 8 0 9 5 1-5 5-9 9-5 3 5-1 10-9 11Z"/>
+        <path d="M20 20c-5 5-5 11-3 16M20 25c4 0 7 2 8 5M18 29c-3-1-6 0-8 3"/>
+      </svg>
+      <span>para ti</span>
+    </a>
+
+    <div class="header-actions">
+      <span class="section-indicator" aria-hidden="true"><i id="progress"></i></span>
+      <button class="icon-button" id="soundToggle" type="button" aria-label="Reproducir música" aria-pressed="false">
+        <svg class="sound-on" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M9 8H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4l5 4V4L9 8Z"/>
+          <path d="M18 8.5a5 5 0 0 1 0 7M20.5 6a8.5 8.5 0 0 1 0 12"/>
+        </svg>
+        <svg class="sound-off" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M9 8H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4l5 4V4L9 8Z"/>
+          <path d="m18 10 4 4m0-4-4 4"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow reveal">21 de septiembre · Estas flores son para ti</p>
+        <h1 class="reveal">Hoy el amarillo<br><em>florece para ti.</em></h1>
+        <p class="hero-lead reveal">
+          Porque este día merecía un detalle que pudiera quedarse mucho más que un ramo.
+        </p>
+        <button class="primary-button reveal" id="openGift" type="button">
+          <span>Recibir mis flores</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg>
+        </button>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="moon"><span></span></div>
+        <div class="orbit orbit--one"></div>
+        <div class="orbit orbit--two"></div>
+        <svg class="bouquet" viewBox="0 0 600 720">
+          <defs>
+            <linearGradient id="stem" x1="0" y1="0" x2="1" y2="1">
+              <stop stop-color="#9bcf71"/><stop offset="1" stop-color="#3f7b3b"/>
+            </linearGradient>
+            <radialGradient id="petal" cx="35%" cy="25%">
+              <stop stop-color="#fffbe2"/><stop offset=".38" stop-color="#ffdd4d"/><stop offset="1" stop-color="#e4a308"/>
+            </radialGradient>
+            <radialGradient id="petalSoft" cx="35%" cy="25%">
+              <stop stop-color="#fff8bd"/><stop offset=".45" stop-color="#ffc83d"/><stop offset="1" stop-color="#d88d00"/>
+            </radialGradient>
+            <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+              <feGaussianBlur stdDeviation="7" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <g class="stems" fill="none" stroke="url(#stem)" stroke-linecap="round">
+            <path d="M302 690C298 530 250 380 170 220"/>
+            <path d="M305 690C335 522 380 366 451 196"/>
+            <path d="M302 690C288 505 305 343 308 152"/>
+            <path d="M301 690C265 537 212 426 116 348"/>
+            <path d="M305 690C346 530 422 445 500 354"/>
+            <path d="M304 690C321 532 344 430 391 304"/>
+            <path d="M302 690C286 558 265 471 225 346"/>
+          </g>
+          <g class="leaves" fill="url(#stem)">
+            <path d="M274 514c-50-8-69-40-67-73 43 9 68 30 67 73Z"/>
+            <path d="M328 526c45-17 70-2 85 26-38 16-66 8-85-26Z"/>
+            <path d="M265 439c-38-15-49-43-40-68 34 14 52 36 40 68Z"/>
+            <path d="M347 427c33-27 62-22 82-2-28 27-57 29-82 2Z"/>
+            <path d="M287 594c-39-1-61-23-65-51 37 1 62 15 65 51Z"/>
+          </g>
+          <g class="flower-head flower-head--1" transform="translate(168 216)">
+            <g fill="url(#petal)"><ellipse rx="30" ry="68" transform="translate(0 -38)"/><ellipse rx="30" ry="68" transform="rotate(72) translate(0 -38)"/><ellipse rx="30" ry="68" transform="rotate(144) translate(0 -38)"/><ellipse rx="30" ry="68" transform="rotate(216) translate(0 -38)"/><ellipse rx="30" ry="68" transform="rotate(288) translate(0 -38)"/></g><circle r="20" fill="#fff1ad" filter="url(#softGlow)"/>
+          </g>
+          <g class="flower-head flower-head--2" transform="translate(451 192)">
+            <g fill="url(#petalSoft)"><ellipse rx="29" ry="65" transform="translate(0 -36)"/><ellipse rx="29" ry="65" transform="rotate(72) translate(0 -36)"/><ellipse rx="29" ry="65" transform="rotate(144) translate(0 -36)"/><ellipse rx="29" ry="65" transform="rotate(216) translate(0 -36)"/><ellipse rx="29" ry="65" transform="rotate(288) translate(0 -36)"/></g><circle r="19" fill="#fff1ad" filter="url(#softGlow)"/>
+          </g>
+          <g class="flower-head flower-head--3" transform="translate(308 147)">
+            <g fill="url(#petal)"><ellipse rx="34" ry="74" transform="translate(0 -42)"/><ellipse rx="34" ry="74" transform="rotate(72) translate(0 -42)"/><ellipse rx="34" ry="74" transform="rotate(144) translate(0 -42)"/><ellipse rx="34" ry="74" transform="rotate(216) translate(0 -42)"/><ellipse rx="34" ry="74" transform="rotate(288) translate(0 -42)"/></g><circle r="22" fill="#fff1ad" filter="url(#softGlow)"/>
+          </g>
+          <g class="flower-head flower-head--4 small" transform="translate(114 345)">
+            <g fill="url(#petalSoft)"><ellipse rx="24" ry="53" transform="translate(0 -30)"/><ellipse rx="24" ry="53" transform="rotate(72) translate(0 -30)"/><ellipse rx="24" ry="53" transform="rotate(144) translate(0 -30)"/><ellipse rx="24" ry="53" transform="rotate(216) translate(0 -30)"/><ellipse rx="24" ry="53" transform="rotate(288) translate(0 -30)"/></g><circle r="16" fill="#fff1ad"/>
+          </g>
+          <g class="flower-head flower-head--5 small" transform="translate(502 350)">
+            <g fill="url(#petal)"><ellipse rx="23" ry="52" transform="translate(0 -29)"/><ellipse rx="23" ry="52" transform="rotate(72) translate(0 -29)"/><ellipse rx="23" ry="52" transform="rotate(144) translate(0 -29)"/><ellipse rx="23" ry="52" transform="rotate(216) translate(0 -29)"/><ellipse rx="23" ry="52" transform="rotate(288) translate(0 -29)"/></g><circle r="15" fill="#fff1ad"/>
+          </g>
+          <g class="flower-head flower-head--6 tiny" transform="translate(392 302)">
+            <g fill="url(#petalSoft)"><ellipse rx="18" ry="42" transform="translate(0 -23)"/><ellipse rx="18" ry="42" transform="rotate(72) translate(0 -23)"/><ellipse rx="18" ry="42" transform="rotate(144) translate(0 -23)"/><ellipse rx="18" ry="42" transform="rotate(216) translate(0 -23)"/><ellipse rx="18" ry="42" transform="rotate(288) translate(0 -23)"/></g><circle r="12" fill="#fff1ad"/>
+          </g>
+          <g class="flower-head flower-head--7 tiny" transform="translate(225 345)">
+            <g fill="url(#petal)"><ellipse rx="18" ry="42" transform="translate(0 -23)"/><ellipse rx="18" ry="42" transform="rotate(72) translate(0 -23)"/><ellipse rx="18" ry="42" transform="rotate(144) translate(0 -23)"/><ellipse rx="18" ry="42" transform="rotate(216) translate(0 -23)"/><ellipse rx="18" ry="42" transform="rotate(288) translate(0 -23)"/></g><circle r="12" fill="#fff1ad"/>
+          </g>
+        </svg>
+        <div class="floating-note"><span>✦</span><p>Estas flores no<br>se van a marchitar</p></div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true"><i></i><span>descubre</span></div>
+    </section>
+
+    <section class="story section" id="historia">
+      <div class="section-number reveal">01</div>
+      <div class="story-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">21 de septiembre</p>
+          <h2>Un ramo que llegó hasta <em>tu pantalla.</em></h2>
+        </div>
+        <div class="story-copy reveal">
+          <p>Las flores amarillas llevan alegría, cariño y buenos deseos. Este ramo fue hecho para que puedas volver a él cuando quieras y conservar este 21 de septiembre.</p>
+          <div class="signature-line"><span></span><small>Un detalle pensado especialmente para hoy</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reasons section" id="razones">
+      <div class="section-intro reveal">
+        <p class="eyebrow">Lo que significan estas flores</p>
+        <h2>Un poquito de sol para <em>celebrar que existes.</em></h2>
+      </div>
+      <div class="reason-grid">
+        <article class="reason-card reveal" tabindex="0">
+          <span class="card-index">I</span>
+          <div class="card-icon card-icon--spark"><i></i><i></i><i></i><i></i></div>
+          <h3>Tu alegría</h3>
+          <p>Esa luz que llevas contigo y que puede convertir cualquier momento normal en uno especial.</p>
+          <span class="card-flower">✦</span>
+        </article>
+        <article class="reason-card reveal" tabindex="0">
+          <span class="card-index">II</span>
+          <div class="card-icon card-icon--moon"><i></i></div>
+          <h3>Los pequeños momentos</h3>
+          <p>Las conversaciones, las ocurrencias y todos esos instantes sencillos que terminan siendo los favoritos.</p>
+          <span class="card-flower">✦</span>
+        </article>
+        <article class="reason-card reveal" tabindex="0">
+          <span class="card-index">III</span>
+          <div class="card-icon card-icon--bloom"><i></i><i></i><i></i><i></i><span></span></div>
+          <h3>Todo lo bonito que viene</h3>
+          <p>Porque todavía quedan historias, lugares y muchísimas razones nuevas para sonreír.</p>
+          <span class="card-flower">✦</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="constellation section" id="constelacion">
+      <div class="constellation-copy reveal">
+        <p class="eyebrow">Un deseo entre millones</p>
+        <h2>Que hoy también el cielo se <em>vista de amarillo.</em></h2>
+        <p>Cada estrella guarda un buen deseo. Cuando se conectan, forman algo preparado especialmente para ti.</p>
+        <button class="secondary-button" id="connectStars" type="button">
+          <span>Encender las estrellas</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z"/></svg>
+        </button>
+      </div>
+      <div class="constellation-art reveal" aria-label="Constelación interactiva en forma de corazón">
+        <svg id="constellationSvg" viewBox="0 0 600 520" role="img">
+          <defs><filter id="starGlow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+          <g class="constellation-lines">
+            <path d="M300 432 205 356 132 272 112 177 147 118 213 111 300 187 387 111 453 118 488 177 468 272 395 356 300 432Z"/>
+            <path d="m147 118 58 238 182-245 8 245M112 177l356 95M213 111l87 321 87-321M132 272l321-154"/>
+          </g>
+          <g class="constellation-stars">
+            <circle cx="300" cy="432" r="5"/><circle cx="205" cy="356" r="4"/><circle cx="132" cy="272" r="5"/><circle cx="112" cy="177" r="4"/><circle cx="147" cy="118" r="6"/><circle cx="213" cy="111" r="4"/><circle cx="300" cy="187" r="6"/><circle cx="387" cy="111" r="4"/><circle cx="453" cy="118" r="6"/><circle cx="488" cy="177" r="4"/><circle cx="468" cy="272" r="5"/><circle cx="395" cy="356" r="4"/>
+          </g>
+        </svg>
+        <span class="constellation-label">un cielo lleno de buenos deseos</span>
+      </div>
+    </section>
+
+    <section class="letter-section section" id="carta">
+      <div class="letter-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="letter-content reveal">
+        <p class="eyebrow">Hay algo más</p>
+        <h2>Una carta esperando<br><em>ser descubierta.</em></h2>
+        <button class="envelope" id="openLetter" type="button" aria-label="Abrir la carta">
+          <span class="envelope-back"></span>
+          <span class="envelope-paper"><i>Para ti</i></span>
+          <span class="envelope-front"></span>
+          <span class="envelope-flap"></span>
+          <span class="envelope-seal">✦</span>
+        </button>
+        <p class="letter-hint">Toca el sobre</p>
+      </div>
+    </section>
+
+    <section class="finale section" id="final">
+      <div class="finale-halo" aria-hidden="true"></div>
+      <div class="finale-content reveal">
+        <p class="eyebrow">Este 21 de septiembre…</p>
+        <h2>Que nunca te falten<br><em>flores amarillas.</em></h2>
+        <p>Que este pequeño jardín conserve para siempre lo especial de este día.</p>
+        <button class="primary-button primary-button--light" id="bloomButton" type="button">
+          <span>Llenar el cielo de flores</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V10m0 5c-4 0-7-2-7-6 4 0 7 2 7 6Zm0-3c4 0 7-2 7-6-4 0-7 2-7 6Z"/></svg>
+        </button>
+        <a class="restart-link" href="#inicio">Volver al inicio</a>
+      </div>
+      <div class="mini-garden" aria-hidden="true">
+        <span style="--x:7%;--h:120px;--d:.1s"></span><span style="--x:15%;--h:190px;--d:.7s"></span><span style="--x:25%;--h:145px;--d:.3s"></span><span style="--x:37%;--h:225px;--d:.9s"></span><span style="--x:49%;--h:165px;--d:.2s"></span><span style="--x:61%;--h:210px;--d:.6s"></span><span style="--x:72%;--h:135px;--d:.4s"></span><span style="--x:83%;--h:200px;--d:.8s"></span><span style="--x:93%;--h:150px;--d:.5s"></span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hecho con tiempo, código y mucho cariño.</p>
+    <span>✦ <span id="year"></span> ✦</span>
+  </footer>
+
+  <dialog class="letter-dialog" id="letterDialog">
+    <div class="dialog-paper">
+      <button class="dialog-close" id="closeLetter" type="button" aria-label="Cerrar carta">×</button>
+      <span class="dialog-kicker">Unas palabras para ti</span>
+      <h2>Para mi persona favorita:</h2>
+      <div class="dialog-body">
+        <p>Hoy es 21 de septiembre y estas flores amarillas llegaron hasta aquí con una misión sencilla: recordarte lo especial que eres.</p>
+        <p>Guardo con cariño nuestras conversaciones y tus ocurrencias, esos momentos sencillos que siempre terminan siendo mis favoritos.</p>
+        <p>Ojalá vuelvas aquí cada vez que quieras recordar este día y todo lo bonito que todavía queda por vivir.</p>
+      </div>
+      <p class="dialog-signature">De tu machito,<br><strong>David</strong></p>
+      <div class="pressed-flower" aria-hidden="true"><i></i><i></i><i></i><i></i><span></span></div>
+    </div>
+  </dialog>
+
+  <div class="petal-layer" id="petalLayer" aria-hidden="true"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite">El cielo se llenó de flores amarillas</div>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
